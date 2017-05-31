@@ -9,19 +9,19 @@
         <item
             android:id="@+id/nav_scan"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Scan" />
+            android:title="Data inventory" />
         <item
             android:id="@+id/nav_penerimaanTabung"
             android:icon="@drawable/ic_form"
-            android:title="Form Penerimaan Tabung" />
+            android:title="Scan Barcode" />
         <item
             android:id="@+id/nav_ujiTabung"
             android:icon="@drawable/ic_assessment"
-            android:title="Uji Tabung" />
+            android:title="Uji Riksa" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
-            android:title="Logout" />
+            android:title="Service" />
     </group>
 
     <item android:title="Communicate">

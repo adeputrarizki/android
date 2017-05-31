@@ -3,6 +3,7 @@ package com.ndtdive.fahmi.inventoryndtdive;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
+import static com.ndtdive.fahmi.inventoryndtdive.R.id.btn_login;
 
 /**
  * A login screen that offers login via email/password.
@@ -81,13 +83,29 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.btn_login);
+        Button mEmailSignInButton = (Button) findViewById(btn_login);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
             }
         });
+        mEmailSignInButton.setOnClickListener(new View.OnClickListener() {
+
+
+
+            public void onClick(View arg0) {
+
+                //   TODO Auto-generated method stub
+                Intent i =new Intent(getApplicationContext(),MainActivity.class);
+
+                startActivity(i);
+
+
+
+            }
+        });
+
 
 //        mLoginFormView = findViewById(R.id.login_form);
 //        mProgressView = findViewById(R.id.login_progress);
